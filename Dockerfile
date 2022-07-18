@@ -19,8 +19,6 @@ RUN set -x \
     && sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
     && apk update -f \
     && apk upgrade \
-    && apk install python3-pip -f \
-    && pip3 install requests \
     && apk --no-cache add -f bash \
                              coreutils \
                              moreutils \
@@ -35,6 +33,7 @@ RUN set -x \
                              jq \
                              openssh \
                              py3-pip \
+    && pip3 install requests \
     && rm -rf /var/cache/apk/* \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
