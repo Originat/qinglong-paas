@@ -5,6 +5,7 @@ LABEL maintainer="${QL_MAINTAINER}"
 ARG QL_URL=https://github.com/${QL_MAINTAINER}/qinglong.git
 ARG QL_BRANCH=master
 
+RUN apt-get install python3-pip -y
 RUN pip3 install requests
 
 ENV PNPM_HOME=/root/.local/share/pnpm \
