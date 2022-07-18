@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "strict": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["src/.umi/*"]
+    },
+    "lib": ["dom", "es2021", "esnext.asynciterable"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./back/types",
+      "./node_modules/celebrate/lib/index.d.ts"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "allowJs": true,
+    "noEmit": false
+  },
+  "include": ["src/**/*", ".umirc.ts", "typings.d.ts", "back/**/*"],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "static",
+    "data",
+    "typings",
+    "**/__test__",
+    "test",
+    "docs",
+    "tests"
+  ]
+}
