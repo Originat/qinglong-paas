@@ -1,7 +1,0 @@
-docker run -dit \
-  -v $PWD/ql:/ql/data \
-  -p 5700:5700 \
-  --name qinglong \
-  --hostname qinglong \
-  --restart unless-stopped \
-  whyour/qinglong:latest
