@@ -1,3 +1,3 @@
-run = ["python3", "main.sh"]
-language = "bash"
+run = ["python3", "javaScript", "shell", "typescript", "main.sh"]
+language = "python3", "javaScript", "shell", "typescript"
 entrypoint = "main.sh"
