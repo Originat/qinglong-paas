@@ -1,0 +1,3 @@
+run = ["python3", "main.sh"]
+language = "bash"
+entrypoint = "main.sh"
