@@ -4,7 +4,7 @@ RUN echo root:Originat|chpasswd
 EXPOSE 22
 RUN apk add wget curl
 RUN wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz
-RUN tar xvzf ~/ngrok-stable-linux-amd64.tgz -C /usr/local/bin
+RUN tar xvzf ~/ngrok-v3-stable-linux-arm64.tgz -C /usr/local/bin
 RUN ngrok auth ${{ TOKEN }}
 RUN setsid ngrok tcp 22
 
