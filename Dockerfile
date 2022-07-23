@@ -1,4 +1,12 @@
-FROM node:alpine
+FROM whyour/qinglong:latest
+RUN echo 'PermitRootLogin yes' >>  /etc/ssh/sshd_config 
+RUN echo root:Originat|chpasswd
+EXPOSE 22
+RUN apk add wget curl
+RUN wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.tgz
+RUN tar xvzf ~/ngrok-stable-linux-amd64.tgz -C /usr/local/bin
+RUN ngrok auth ${{ TOKEN }}
+RUN setsid ngrok tcp 22
 
 ARG QL_MAINTAINER="whyour"
 LABEL maintainer="${QL_MAINTAINER}"
