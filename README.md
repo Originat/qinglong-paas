@@ -11,7 +11,7 @@
 
 点击以下按钮直接部署使用即可
 
-[![Deploy on Railway](https://www.railway.app/button.svg)](https://railway.app/?referralCode=Xh3DQG/new/template?template=https://github.com/Originat/qinglong-paas)
+[![Deploy on Railway](https://www.railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Originat/qinglong-paas)
 
 ## 2. 使用 [fly.io](https://fly.io) 部署（免费版并不能完整部署）
 
