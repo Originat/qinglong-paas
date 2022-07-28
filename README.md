@@ -11,7 +11,7 @@
 
 注册Railway
 
-[registered on Railway](https://railway.app/?referralCode=Xh3DQG)
+[Register on Railway](https://railway.app/?referralCode=Xh3DQG)
 
 点击以下按钮直接部署使用即可
 
