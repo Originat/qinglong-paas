@@ -9,6 +9,10 @@
 
 ## 1. 使用 Railway 部署
 
+注册Railway
+
+[![registered on Railway](https://www.railway.app/button.svg)](https://railway.app/?referralCode=Xh3DQG)
+
 点击以下按钮直接部署使用即可
 
 [![Deploy on Railway](https://www.railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Originat/qinglong-paas)
