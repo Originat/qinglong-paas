@@ -1,4 +1,4 @@
-FROM whyour/qinglong:latest
+FROM node:alpine
 
 ARG QL_MAINTAINER="whyour"
 LABEL maintainer="${QL_MAINTAINER}"
@@ -10,7 +10,7 @@ ENV PNPM_HOME=/root/.local/share/pnpm \
     LANG=zh_CN.UTF-8 \
     SHELL=/bin/bash \
     PS1="\u@\h:\w \$ " \
-    QL_DIR=/on \
+    QL_DIR=/ql \
     QL_BRANCH=${QL_BRANCH}
 
 WORKDIR ${QL_DIR}
