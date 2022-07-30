@@ -33,8 +33,8 @@ RUN set -x \
                              jq \
                              openssh \
                              py3-pip \
-    && pip3 install requests \
-    && rm -rf /var/cache/apk/* \
+    && pip3 install requests
+RUN rm -rf /var/cache/apk/* \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && git config --global user.email "qinglong@@users.noreply.github.com" \
