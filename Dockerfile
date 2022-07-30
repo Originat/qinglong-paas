@@ -10,7 +10,7 @@ ENV PNPM_HOME=/root/.local/share/pnpm \
     LANG=zh_CN.UTF-8 \
     SHELL=/bin/bash \
     PS1="\u@\h:\w \$ " \
-    QL_DIR=/ql \
+    QL_DIR=/on \
     QL_BRANCH=${QL_BRANCH}
 
 WORKDIR ${QL_DIR}
@@ -33,8 +33,8 @@ RUN set -x \
                              jq \
                              openssh \
                              py3-pip \
-    && pip3 install requests
-RUN rm -rf /var/cache/apk/* \
+    && pip3 install requests \
+    && rm -rf /var/cache/apk/* \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && git config --global user.email "qinglong@@users.noreply.github.com" \
