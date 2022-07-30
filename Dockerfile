@@ -1,6 +1,4 @@
- lines (53 sloc)  2.06 KB
-
-FROM node:alpine
+FROM whyour/qinglong:latest
 
 ARG QL_MAINTAINER="whyour"
 LABEL maintainer="${QL_MAINTAINER}"
