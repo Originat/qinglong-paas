@@ -9,9 +9,7 @@
 
 ## 1. 使用 Railway 部署
 
-注册Railway
-
-[Register on Railway](https://railway.app/?referralCode=Xh3DQG)
+[注册 Railway](https://railway.app/?referralCode=Xh3DQG)
 
 点击以下按钮直接部署使用即可
 
