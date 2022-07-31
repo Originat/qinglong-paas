@@ -1,5 +1,3 @@
- lines (53 sloc)  2.06 KB
-
 FROM node:alpine
 
 ARG QL_MAINTAINER="whyour"
